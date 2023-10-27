@@ -321,7 +321,7 @@ header::after {
 }
 
 .buy {
-  padding: 150px 0 0;
+  padding: 150px 0 150px;
 }
 
 .buy__inner {
@@ -421,12 +421,12 @@ header::after {
 
 .technology__top-inner {
   position: relative;
-  min-height: 110vh;
+  min-height: 180vh;
 }
 
 .technology__btn {
   right: 350px;
-  top: 50vh;
+  top: 75vh;
 }
 
 .technology__top-box {
@@ -465,13 +465,14 @@ header::after {
 }
 
 .gallery-min {
+  position: relative;
   display: grid;
   gap: 30px 24px;
   grid-template-columns: 481px 208px;
   grid-template-rows: 432px 300px;
-  /* transform: translateY(-50%); */
-  margin-top: -35%;
-  position: relative;
+ 
+  margin-top: -30%;
+ 
   padding: 72px 31px 52px;
 }
 
@@ -493,7 +494,7 @@ header::after {
 }
 
 .gallery-min__img--2 {
-  border-radius: 400px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .gallery-max {
@@ -692,6 +693,31 @@ header::after {
   .header__decor-text--two {
     left: 0;
   }
+
+  .gallery__box {
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .gallery__text {
+    width: 100%;
+  }
+  .gallery-min {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 0;
+    width: 100%;
+  } 
+
+  .gallery-min__img {
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+  }
+  .gallery-min__img--2 {
+    object-fit: fill;
+  }
+
   .buy {
     padding-top: 100px;
   }
@@ -741,6 +767,12 @@ header::after {
 
   .info__top-text {
     padding-top: 40px;
+  }
+
+  .technology__btn {
+    position: absolute;
+    right: 100px;
+    top: 90vh;
   }
 
   .info__top-text--border {
@@ -802,6 +834,14 @@ header::after {
   .info__specs-item {
     font-size: 14px;
     margin-bottom: 10px;
+  }
+
+  .gallery-min {
+    padding: 20px 10px 20px;
+  }
+
+  .gallery-min::before {
+    border-radius: 197px 0 200px;
   }
 }
 
@@ -868,6 +908,9 @@ header::after {
   .header__decor-text-three {
     bottom: 0;
   }
+  .info__top {
+    margin-bottom: 10vh;
+  }
   .info__specs {
     display: block;
   }
@@ -880,6 +923,12 @@ header::after {
   }
   .info__specs-text {
     width: 300px;
+  }
+  .buy {
+    padding-bottom: 10px;
+  }
+  .technology__top-inner {
+    min-height: 80vh;
   }
   .technology__title {
     max-width: 380px;
@@ -950,6 +999,15 @@ header::after {
     font-size: 14px;
     line-height: 10px;
   }
+
+  .gallery-min {
+    gap: 10px;
+  }
+
+  .gallery-min::before {
+    display: none;
+  }
+
   .footer__logo svg {
     width: 90%;
   }
